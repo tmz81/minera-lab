@@ -9,7 +9,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
-
+import logo from "../../assets/logotipo-mineralab-removebg-preview.png"
 const pages = ["Sobre", "Serviços", "Equipamentos"];
 
 export default function NavBar() {
@@ -74,7 +74,7 @@ export default function NavBar() {
           >
             <Box
               component="img"
-              src="./assets/logotipo-mineralab-removebg-preview.png"
+              src={logo}
               alt="logo"
               sx={{
                 height: 100,
@@ -136,7 +136,7 @@ export default function NavBar() {
           >
             <Box
               component="img"
-              src="./assets/logotipo-mineralab-removebg-preview.png"
+              src={logo}
               alt="logo"
               sx={{ height: 100 }}
             />

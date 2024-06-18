@@ -8,6 +8,7 @@ import {
   IconButton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import banner from "../../assets/logo3.jpg";
 
 export default function Section1() {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Section1() {
               fontSize: "40px",
               userSelect: "none",
               caretColor: "transparent",
-              mb: 4
+              mb: 4,
             }}
           >
             <span style={{ color: "#FF7F0B" }}>Sobre este laboratório</span>
@@ -77,7 +78,7 @@ export default function Section1() {
           <Box sx={{ display: "flex", gap: 4, userSelect: "none" }}>
             <Box
               component="img"
-              src="./assets/logo3.jpg"
+              src={banner}
               alt="Banner Two iPhone"
               sx={{
                 height: { xs: "200px", sm: "250px", md: "300px" },
