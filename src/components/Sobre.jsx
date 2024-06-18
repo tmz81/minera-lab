@@ -79,7 +79,7 @@ export default function Section1() {
             <Box
               component="img"
               src={banner}
-              alt="Banner Two iPhone"
+              alt="Banner MineraLab"
               sx={{
                 height: { xs: "200px", sm: "250px", md: "300px" },
                 cursor: "pointer",
