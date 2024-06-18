@@ -1,4 +1,8 @@
 // constants.js
+import equipamento1 from '../../assets/equipamento1.jpg';
+import equipamento2 from '../../assets/equipamento2.jpg';
+import equipamento3 from '../../assets/equipamento3.jpeg';
+
 export const swiperBreakpoints = {
   375: {
     slidesPerView: 1,
@@ -20,7 +24,7 @@ export const swiperBreakpoints = {
 
 export const cardsData = [
   {
-    src: "../../assets/equipamento2.jpg",
+    src: equipamento1,
     alt: "Imagem 2",
     name: "Difratômetro de Raios X",
     description:
@@ -34,7 +38,7 @@ export const cardsData = [
     techniques: ["Análise Mineralógica De Fase Minerais"],
   },
   {
-    src: "../../assets/equipamento1.jpg",
+    src: equipamento2,
     alt: "Imagem 1",
     name: "Analisador Térmico",
     description:
@@ -52,7 +56,7 @@ export const cardsData = [
     ],
   },
   {
-    src: "../../assets/equipamento3.jpeg",
+    src: equipamento3,
     alt: "Imagem 3",
     name: "Espectroscópico no Infravermelho por Transformada de Fourier",
     description:
