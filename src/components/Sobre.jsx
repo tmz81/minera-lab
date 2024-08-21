@@ -129,7 +129,7 @@ export default function Section1() {
           </IconButton>
           <Box
             component="img"
-            src="./assets/logo3.jpg"
+            src={banner}
             alt="Expanded Banner"
             sx={{
               maxHeight: "90vh",
