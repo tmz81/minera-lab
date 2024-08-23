@@ -102,12 +102,16 @@ export const cardsComite = [
     alt: "Valdomiro Severino de Souza Júnior",
     name: "Valdomiro Severino de Souza Júnior",
     description: "Prof. Coordenador do Laboratório",
+    links: "http://lattes.cnpq.br/3461006118388502",
+    linkDescription: "Curriculo Lattes"
   },
   {
     src: Ygor,
     alt: "Ygor Jacques",
     name: "Ygor Jacques",
     description: "Prof. do Depto. de Agronomia",
+    links: "http://lattes.cnpq.br/0904824873761236",
+    linkDescription: "Curriculo Lattes"
   },
 ];
 
@@ -117,11 +121,15 @@ export const cardsComiteExterno = [
     alt: "José Coelho de Araújo Filho",
     name: "José Coelho de Araújo Filho",
     description: "Dr. Embrapa Solos/UEP Recife",
+    links: "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4789108J5",
+    linkDescription: "Curriculo Lattes"
   },
   {
     src: Marcelo,
     alt: "Prof. Marcelo Metri Corrêa Universidade Federal do Agreste de Pernambuco",
     name: "Marcelo Metri Corrêa",
     description: "Prof. Universidade Federal do Agreste de Pernambuco",
+    links: "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4791658P9",
+    linkDescription: "Curriculo Lattes"
   },
 ];

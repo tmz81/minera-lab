@@ -67,6 +67,14 @@ export default function ComiteExterno() {
                     <Typography variant="body2" sx={{ mb: 1 }}>
                       {card.description}
                     </Typography>
+                    <Typography
+                      variant="body2"
+                      component="a"
+                      href={card.links}
+                      sx={{ mb: 1 }}
+                    >
+                      {card.linkDescription}
+                    </Typography>
                   </Box>
                 </Box>
               </SwiperSlide>
