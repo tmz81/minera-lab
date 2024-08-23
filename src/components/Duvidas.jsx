@@ -7,6 +7,10 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Valdomiro from "../../assets/Valdomiro.jpeg";
+import Ygor from "../../assets/Ygor.jpeg";
+import Comite from "./Comite";
+import ComiteExterno from "./ComiteExterno";
 
 export default function Duvidas() {
   return (
@@ -37,22 +41,18 @@ export default function Duvidas() {
             <Typography
               sx={{ color: "#FF7F0B", fontWeight: 700, fontSize: 28 }}
             >
-              O que é mineralogia do solo e por que é importante?
+              Horário de funcionamento
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              A mineralogia do solo é o estudo dos minerais presentes no solo e
-              suas propriedades. É importante porque os minerais influenciam
-              diretamente as características físicas e químicas do solo,
-              afetando sua fertilidade, capacidade de retenção de água e
-              comportamento no cultivo de plantas. Conhecer a composição
-              mineralógica ajuda a entender a formação do solo e a sua
-              capacidade de sustentar diferentes tipos de vegetação.
+              Segunda-feira a sexta-feira, com atendimento aos usuários das
+              08:00 às 18:00 horas.
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
+          defaultExpanded
           sx={{
             backgroundColor: "#fff",
             color: "#000",
@@ -68,20 +68,22 @@ export default function Duvidas() {
             <Typography
               sx={{ color: "#FF7F0B", fontWeight: 700, fontSize: 28 }}
             >
-              Quais são os principais minerais encontrados no solo?
+              Disponibilização de acesso ao laboratório para pesquisadores de
+              outros grupos e instituições
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Os principais minerais encontrados no solo incluem quartzo,
-              feldspatos, micas, argilas (como caulinita, ilita e
-              montmorilonita), óxidos de ferro (como hematita e goethita) e
-              carbonatos (como calcita). Esses minerais variam dependendo do
-              tipo de solo e das condições geológicas e climáticas da região.
+              O MineraLAB é um Laboratório Multiusuário totalmente disponível e
+              acessível para pesquisadores do estado de Pernambuco, bem como de
+              pesquisadores de outros estados. O que se pode atestar pelas
+              cartas de anuência que foram emitidas, nos atesta e assegura que
+              somos efetivamente um Laboratório Multiusuário.
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
+          defaultExpanded
           sx={{
             backgroundColor: "#fff",
             color: "#000",
@@ -97,23 +99,21 @@ export default function Duvidas() {
             <Typography
               sx={{ color: "#FF7F0B", fontWeight: 700, fontSize: 28 }}
             >
-              Como a mineralogia do solo afeta a fertilidade do solo?
+              O que é um Comitê Gestor?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              A mineralogia do solo afeta a fertilidade do solo de várias
-              maneiras. Minerais de argila, por exemplo, têm uma alta capacidade
-              de troca catiônica, o que significa que podem reter e liberar
-              nutrientes importantes para as plantas. Óxidos de ferro e alumínio
-              podem afetar a disponibilidade de fósforo. A presença de
-              carbonatos pode influenciar o pH do solo. Assim, a composição
-              mineralógica pode determinar a quantidade e a disponibilidade de
-              nutrientes essenciais para o crescimento das plantas.
+              O Comitê Gestor funciona como órgão deliberativo e consultivo nos
+              assuntos técnicos/científicos, administrativo e financeiro. O
+              comitê se reúne ordinariamente a cada 4 meses e de forma
+              extraordinária quando necessário ou quando convocado pelos membros
+              do comitê.
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
+          defaultExpanded
           sx={{
             backgroundColor: "#fff",
             color: "#000",
@@ -129,36 +129,19 @@ export default function Duvidas() {
             <Typography
               sx={{ color: "#FF7F0B", fontWeight: 700, fontSize: 28 }}
             >
-              Quais métodos são usados para determinar a mineralogia do solo?
+              O comitê gestor é formado por quais membros?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Existem vários métodos para determinar a mineralogia do solo,
-              incluindo:
               <ul>
                 <li>
-                  <strong>Difração de Raios X (DRX):</strong> Utilizada para
-                  identificar a composição mineralógica e quantificar os
-                  minerais presentes.
+                  O comitê gestor é formado por dois membros da UFRPE:
+                  <Comite />
                 </li>
                 <li>
-                  <strong>Microscopia Eletrônica de Varredura (MEV):</strong>{" "}
-                  Utilizada para observar a morfologia dos minerais e sua
-                  distribuição no solo.
-                </li>
-                <li>
-                  <strong>Análise Térmica (TG/DTA/DSC):</strong> Utilizada para
-                  estudar as mudanças nas propriedades físicas e químicas dos
-                  minerais quando aquecidos.
-                </li>
-                <li>
-                  <strong>
-                    Espectroscopia de Infravermelho por Transformada de Fourier
-                    (FTIR):
-                  </strong>{" "}
-                  Utilizada para identificar os grupos funcionais e a estrutura
-                  química dos minerais.
+                  e dois membros externos à UFRPE:
+                  <ComiteExterno />
                 </li>
               </ul>
             </Typography>

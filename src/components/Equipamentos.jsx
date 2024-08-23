@@ -272,7 +272,7 @@ export default function Equipamentos() {
               <Typography variant="h5" sx={{ mb: 3, fontWeight: 800 }}>
                 {currentImage.description}
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2" fontWeight={800}>
                 <strong>Marca</strong>: {currentImage.brand}
               </Typography>
               <Typography variant="body2">

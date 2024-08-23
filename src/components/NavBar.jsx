@@ -9,7 +9,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
-import logo from "../../assets/logotipo-mineralab-removebg-preview.png"
+import logo from "../../assets/logo-mineralab.png";
 const pages = ["Sobre", "Serviços", "Equipamentos"];
 
 export default function NavBar() {
@@ -56,7 +56,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <AppBar elevation={0} sx={{ backgroundColor: "#f1f1f1", color: "#000" }}>
+    <AppBar elevation={0} sx={{ backgroundColor: "#ffefd5", color: "#000" }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box
@@ -77,12 +77,15 @@ export default function NavBar() {
               src={logo}
               alt="logo"
               sx={{
-                height: 100,
+                height: 80,
                 userSelect: "default",
                 cursor: "default",
                 caretColor: "transparent",
               }}
             />
+            <Typography variant="h6" gutterBottom fontWeight={500} pt={3}>
+              Laboratório de Mineralogia do Solo
+            </Typography>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -134,12 +137,7 @@ export default function NavBar() {
               textDecoration: "none",
             }}
           >
-            <Box
-              component="img"
-              src={logo}
-              alt="logo"
-              sx={{ height: 100 }}
-            />
+            <Box component="img" src={logo} alt="logo" sx={{ height: 70 }} />
           </Box>
 
           <Box
@@ -160,6 +158,10 @@ export default function NavBar() {
                     activeSection === page.toLowerCase() ? "#FF7F0B" : "black",
                   display: "block",
                   textTransform: "none",
+                  fontWeight: "bold",
+                  "&:hover": {
+                    backgroundColor: "#FF7F0B",
+                  },
                 }}
               >
                 {page}
@@ -172,7 +174,7 @@ export default function NavBar() {
             variant="contained"
             sx={{
               display: { xs: "none", md: "flex" },
-              backgroundColor: "#FF7F0B",
+              backgroundColor: "#FFB74D",
               color: "black",
               borderRadius: 50,
               fontWeight: 700,

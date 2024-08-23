@@ -8,7 +8,7 @@ import {
   IconButton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import banner from "../../assets/logo3.jpg";
+import banner from "../../assets/logo4.png";
 
 export default function Section1() {
   const [open, setOpen] = useState(false);
@@ -35,37 +35,18 @@ export default function Section1() {
               mb: 4,
             }}
           >
-            <span style={{ color: "#FF7F0B" }}>Sobre este laboratório</span>
+            <span style={{ color: "#FF7F0B" }}>Sobre o MineraLAB</span>
           </Typography>
           <Box>
-            <Typography variant="body1" gutterBottom>
-              Nosso laboratório é especializado em análises mineralógicas de
-              solos e sedimentos, com foco particular na fração argila.
-              Utilizamos técnicas avançadas, incluindo:
+            <Typography variant="h6" gutterBottom>
+              O Laboratório Multiusuário de Mineralogia do Solo da UFRPE
+              (MineraLAB) está sediado no Departamento de Agronomia e é
+              infraestrutura integrante do Programa de Pós-Graduação em Ciência
+              do Solo, na cidade do Recife. O laboratório é de referência não
+              apenas no estado de Pernambuco, mas na região nordeste para o
+              estudo de minerais em ambiente de solos e sedimentos,
+              especialmente minerais na fração argila.
             </Typography>
-            <ul>
-              <Typography variant="body1" component="li" gutterBottom>
-                Difração de Raios X (DRX)
-              </Typography>
-              <Typography variant="body1" component="li" gutterBottom>
-                Análises Térmicas:
-                <ul>
-                  <Typography variant="body1" component="li">
-                    Análise Térmica Diferencial (DTA)
-                  </Typography>
-                  <Typography variant="body1" component="li">
-                    Termogravimetria (TG)
-                  </Typography>
-                  <Typography variant="body1" component="li">
-                    Calorimetria Exploratória Diferencial (DSC)
-                  </Typography>
-                </ul>
-              </Typography>
-              <Typography variant="body1" component="li" gutterBottom>
-                Espectroscopia no Infravermelho por Transformada de Fourier
-                (FTIR)
-              </Typography>
-            </ul>
           </Box>
         </Grid>
         <Grid
@@ -81,8 +62,9 @@ export default function Section1() {
               src={banner}
               alt="Banner MineraLab"
               sx={{
-                height: { xs: "200px", sm: "250px", md: "300px" },
+                height: { xs: "130px", sm: "25px", md: "200px" },
                 cursor: "pointer",
+                borderRadius: "16px",
                 transition: "transform 0.3s ease-in-out",
                 "&:hover": {
                   transform: "scale(1.05)",

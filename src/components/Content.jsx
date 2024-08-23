@@ -1,7 +1,11 @@
 // constants.js
-import equipamento1 from '../../assets/equipamento1.jpg';
-import equipamento2 from '../../assets/equipamento2.jpg';
-import equipamento3 from '../../assets/equipamento3.jpeg';
+import equipamento1 from "../../assets/equipamento1.jpg";
+import equipamento2 from "../../assets/equipamento2.jpg";
+import equipamento3 from "../../assets/equipamento3.jpeg";
+import Valdomiro from "../../assets/Valdomiro.jpeg";
+import Ygor from "../../assets/Ygor.jpeg";
+import Coelho from "../../assets/Coelho.jpeg";
+import Marcelo from "../../assets/Marcelo.png";
 
 export const swiperBreakpoints = {
   375: {
@@ -18,6 +22,25 @@ export const swiperBreakpoints = {
   },
   1024: {
     slidesPerView: 3,
+    spaceBetween: 40,
+  },
+};
+
+export const swiperBreakpointsComite = {
+  375: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+  },
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  768: {
+    slidesPerView: 2,
+    spaceBetween: 30,
+  },
+  1024: {
+    slidesPerView: 2,
     spaceBetween: 40,
   },
 };
@@ -58,7 +81,7 @@ export const cardsData = [
   {
     src: equipamento3,
     alt: "Imagem 3",
-    name: "Espectroscópico no Infravermelho por Transformada de Fourier",
+    name: "FTIR",
     description:
       "Espectroscópico no Infravermelho por Transformada de Fourier com varredura de 400 a 4.000 cm-1. As amostras podem ser analisadas por pastilha em KBr ou por amostra sem tratamento analisada em ATR.",
     brand: "PerkinElmer",
@@ -70,5 +93,35 @@ export const cardsData = [
     techniques: [
       "Análise De Fases Minerais Por Espectroscopia No Infravermelho Por Transformada De Fourier",
     ],
+  },
+];
+
+export const cardsComite = [
+  {
+    src: Valdomiro,
+    alt: "Valdomiro Severino de Souza Júnior",
+    name: "Valdomiro Severino de Souza Júnior",
+    description: "Prof. Coordenador do Laboratório",
+  },
+  {
+    src: Ygor,
+    alt: "Ygor Jacques",
+    name: "Ygor Jacques",
+    description: "Prof. do Depto. de Agronomia",
+  },
+];
+
+export const cardsComiteExterno = [
+  {
+    src: Coelho,
+    alt: "José Coelho de Araújo Filho",
+    name: "José Coelho de Araújo Filho",
+    description: "Dr. Embrapa Solos/UEP Recife",
+  },
+  {
+    src: Marcelo,
+    alt: "Prof. Marcelo Metri Corrêa Universidade Federal do Agreste de Pernambuco",
+    name: "Marcelo Metri Corrêa",
+    description: "Prof. Universidade Federal do Agreste de Pernambuco",
   },
 ];
