@@ -27,6 +27,22 @@ export default function Footer() {
               >
                 <Typography variant="h6">Endereço</Typography>
                 <Typography variant="body2">
+                  O Laboratório de Mineralogia do Solo (MineraLAB) pertence à
+                  Área de Solos do Departamento de Agronomia da Universidade
+                  Federal Rural de Pernambuco (campus Dois Irmãos, Recife), e é
+                  integrante do Programa de Pós-graduação em Ciência do Solo
+                </Typography>
+                <Typography
+                  component="a"
+                  href="https://www.google.com/maps/place/Portaria+Z4+da+UFRPE/@-8.0163251,-34.9477336,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab198b8755d1a9:0xf6b71cf1535869e8!8m2!3d-8.0163304!4d-34.9451587!16s%2Fg%2F11dfj95tf7?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="body2"
+                  sx={{
+                    marginTop: "8px",
+                    fontSize: "14px",
+                  }}
+                >
                   Rua Dom Manuel de Medeiros, Portaria Z4.
                 </Typography>
                 <Typography variant="body2">PE - Recife</Typography>

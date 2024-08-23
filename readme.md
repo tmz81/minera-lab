@@ -1,7 +1,7 @@
-# O MineraLAB
+# O MineraLAB [x]
 O Laboratório Multiusuário de Mineralogia do Solo da UFRPE (MineraLAB) está sediado no Departamento de Agronomia e é infraestrutura integrante do Programa de Pós-Graduação em Ciência do Solo, na cidade do Recife. O laboratório é de referência não apenas no estado de Pernambuco, mas na região nordeste para o estudo de minerais em ambiente de solos e sedimentos, especialmente minerais na fração argila.
 
-Objetivos do Desenvolvimento Sustentável (ODS)
+# Objetivos do Desenvolvimento Sustentável (ODS) [x]
 Fome Zero e Agricultura Sustentável: As atividades do MineraLAB estão relacionadas com o manejo sustentável de solos, por meio do estudo da mineralogia do solo, aplicando ao uso sustentável de fertilizantes e agroquímicos, bem como na caracterização de remineralizadores (pó de rochas) para a substituição parcial ou total de fertilizantes industrializados na adubação de culturas agrícolas. 
 
 # Horário de funcionamento [x]
@@ -18,7 +18,7 @@ Segunda-feira a sexta-feira, com atendimento aos usuários das 08:00 às 18:00 h
 - Equipamento: ATD/DSC/TG - Netzsch/Júpiter STA 449 (Tombamento UFRPE-032750).
 - Equipamento: FTIR - PerkinElmer / Spectrum Two (Tombamento UFRPE-032752).
 
-# Comitê Gestor []
+# Comitê Gestor [x]
 O Comitê Gestor funciona com órgão deliberativo e consultivo nos assuntos técnicos/científicos, administrativo e financeiro. O comitê se reúne ordinariamente a cada 4 meses e de forma extraordinária quando necessário ou quando convocado pelos membros do comitê.
 O comitê gestor é formado por dois membros da UFRPE: 
 -> Prof. Valdomiro Severino de Souza Júnior (Coordenador do Laboratório);

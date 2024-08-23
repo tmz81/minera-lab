@@ -47,6 +47,28 @@ export default function Section1() {
               estudo de minerais em ambiente de solos e sedimentos,
               especialmente minerais na fração argila.
             </Typography>
+            <Typography
+              sx={{
+                fontWeight: 600,
+                fontSize: "28px",
+                userSelect: "none",
+                caretColor: "transparent",
+                mt: 4,
+              }}
+            >
+              <span style={{ color: "#FF7F0B" }}>
+                Objetivos do Desenvolvimento Sustentável (ODS)
+              </span>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              Fome Zero e Agricultura Sustentável: As atividades do MineraLAB
+              estão relacionadas com o manejo sustentável de solos, por meio do
+              estudo da mineralogia do solo, aplicando ao uso sustentável de
+              fertilizantes e agroquímicos, bem como na caracterização de
+              remineralizadores (pó de rochas) para a substituição parcial ou
+              total de fertilizantes industrializados na adubação de culturas
+              agrícolas.
+            </Typography>
           </Box>
         </Grid>
         <Grid
