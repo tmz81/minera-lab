@@ -1,4 +1,5 @@
 import { Container, Box, Typography, Grid } from "@mui/material";
+import MiniMap from "./components/MiniMap";
 
 export default function Footer() {
   return (
@@ -25,47 +26,28 @@ export default function Footer() {
                   pb: 5,
                 }}
               >
-                <Typography variant="h6">Endereço</Typography>
+                <MiniMap />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "50px",
+                  gap: "8px",
+                  borderBottom: "1px solid #1E2125",
+                  pb: 5,
+                }}
+              >
                 <Typography variant="body2">
                   O Laboratório de Mineralogia do Solo (MineraLAB) pertence à
                   Área de Solos do Departamento de Agronomia da Universidade
                   Federal Rural de Pernambuco (campus Dois Irmãos, Recife), e é
                   integrante do Programa de Pós-graduação em Ciência do Solo
                 </Typography>
-                <Typography
-                  component="a"
-                  href="https://www.google.com/maps/place/Portaria+Z4+da+UFRPE/@-8.0163251,-34.9477336,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab198b8755d1a9:0xf6b71cf1535869e8!8m2!3d-8.0163304!4d-34.9451587!16s%2Fg%2F11dfj95tf7?entry=ttu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="body2"
-                  sx={{
-                    marginTop: "8px",
-                    fontSize: "14px",
-                  }}
-                >
-                  Rua Dom Manuel de Medeiros, Portaria Z4.
-                </Typography>
-                <Typography variant="body2">PE - Recife</Typography>
-                <Typography variant="body2">CEP 52171-900</Typography>
-                <Typography
-                  component="a"
-                  href="https://www.google.com/maps/place/Portaria+Z4+da+UFRPE/@-8.0163251,-34.9477336,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab198b8755d1a9:0xf6b71cf1535869e8!8m2!3d-8.0163304!4d-34.9451587!16s%2Fg%2F11dfj95tf7?entry=ttu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="body2"
-                  sx={{
-                    marginTop: "8px",
-                    fontSize: "14px",
-                  }}
-                >
-                  Veja como chegar
-                </Typography>
               </Box>
-              <Typography variant="body2" sx={{ fontSize: "14px" }}>
-                MineraLab © 2024. All rights reserved.
-              </Typography>
             </Grid>
-            <Grid item xs={12} md={4} sx={{ textAlign: "center" }}></Grid>
             <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
               <Box
                 sx={{
@@ -88,6 +70,9 @@ export default function Footer() {
                   Telefone: (81) 9-8808-8183
                 </Typography>
               </Box>
+              <Typography variant="body2" sx={{ fontSize: "14px", pt: 4 }}>
+                MineraLab © 2024. All rights reserved.
+              </Typography>
             </Grid>
           </Grid>
         </Box>
