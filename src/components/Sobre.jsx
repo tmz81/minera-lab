@@ -8,7 +8,7 @@ import {
   IconButton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import banner from "../../assets/logo4.png";
+import banner from "../../assets/logo5.jpg";
 
 export default function Section1() {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Section1() {
     <Container
       id="sobre"
       maxWidth="lg"
-      sx={{ mt: "246px", pb: "150px", cursor: "default" }}
+      sx={{ mt: "150px", pb: "150px", cursor: "default" }}
     >
       <Grid container spacing={2} alignItems="center" sx={{ color: "#000" }}>
         <Grid item xs={12} md={6}>
@@ -74,17 +74,17 @@ export default function Section1() {
         <Grid
           item
           xs={12}
-          sm={4}
           md={6}
-          sx={{ display: "flex", justifyContent: "right" }}
+          sx={{ display: "flex", justifyContent: "center" }}
         >
           <Box sx={{ display: "flex", gap: 4, userSelect: "none" }}>
             <Box
               component="img"
               src={banner}
+              onClick={handleOpen}
               alt="Banner MineraLab"
               sx={{
-                height: { xs: "130px", sm: "25px", md: "200px" },
+                height: { xs: "730px" },
                 cursor: "pointer",
                 borderRadius: "16px",
                 transition: "transform 0.3s ease-in-out",
@@ -92,7 +92,6 @@ export default function Section1() {
                   transform: "scale(1.05)",
                 },
               }}
-              onClick={handleOpen}
             />
           </Box>
         </Grid>

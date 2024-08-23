@@ -11,7 +11,6 @@ import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo-mineralab.png";
 
-
 const pages = ["Sobre", "Serviços", "Equipamentos", "Comitê"];
 
 export default function NavBar() {
@@ -121,9 +120,45 @@ export default function NavBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button
+                    key={page}
+                    href={`#${page.toLowerCase()}`}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      my: 2,
+                      color:
+                        activeSection === page.toLowerCase()
+                          ? "#FF7F0B"
+                          : "black",
+                      display: "block",
+                      textTransform: "none",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        backgroundColor: "#FF7F0B",
+                      },
+                    }}
+                  >
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
+              <Button
+                href="#footer"
+                variant="contained"
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  backgroundColor: "#FFB74D",
+                  color: "black",
+                  borderRadius: 50,
+                  fontWeight: 700,
+                  textTransform: "none",
+                  "&:hover": {
+                    backgroundColor: "#FF7F0B",
+                  },
+                }}
+              >
+                Endereço
+              </Button>
             </Menu>
           </Box>
 
