@@ -1,20 +1,10 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { cardsComiteExterno, swiperBreakpointsComite } from "./Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function ComiteExterno() {
-  const [open, setOpen] = React.useState(false);
-  const [currentImage, setCurrentImage] = React.useState({});
-
-  const handleOpen = (img) => {
-    setCurrentImage(img);
-    setOpen(true);
-  };
-
-  const handleClose = () => setOpen(false);
   return (
     <Grid container justifyContent="center">
       <Grid container alignItems="center" justifyContent="center">
@@ -23,8 +13,6 @@ export default function ComiteExterno() {
           spaceBetween={50}
           slidesPerView={1}
           breakpoints={swiperBreakpointsComite}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           {cardsComiteExterno.map((card, index) => (
             <Grid item key={card.alt} xs={12} sm={4} md={6}>
@@ -51,14 +39,17 @@ export default function ComiteExterno() {
                       maxWidth: "100%",
                       maxHeight: "100%",
                       borderRadius: "16px",
-                      width: "auto",
+                      width: "200px",
                       mx: "auto",
                       cursor: "pointer",
                       marginBottom: "10px",
+                      transition: "transform 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                      },
                     }}
                     src={card.src}
                     alt={card.alt}
-                    onClick={() => handleOpen(card)}
                   />
                   <Box
                     sx={{

@@ -82,6 +82,10 @@ export default function Equipamentos() {
                         mx: "auto",
                         cursor: "pointer",
                         marginBottom: "40px",
+                        transition: "transform 0.3s ease-in-out",
+                        "&:hover": {
+                          transform: "scale(1.05)",
+                        },
                       }}
                       src={card.src}
                       alt={card.alt}
@@ -253,6 +257,10 @@ export default function Equipamentos() {
                   width: "100%",
                   mx: "auto",
                   cursor: "pointer",
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
                 src={currentImage.src}
                 alt={currentImage.alt}

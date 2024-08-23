@@ -84,7 +84,7 @@ export default function NavBar() {
                 caretColor: "transparent",
               }}
             />
-            <Typography variant="h6" gutterBottom fontWeight={500} pt={3}>
+            <Typography variant="h6" gutterBottom fontWeight={400} pt={3}>
               Laboratório de Mineralogia do Solo
             </Typography>
           </Box>

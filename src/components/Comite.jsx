@@ -1,20 +1,10 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { cardsComite, swiperBreakpointsComite } from "./Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function Comite() {
-  const [open, setOpen] = React.useState(false);
-  const [currentImage, setCurrentImage] = React.useState({});
-
-  const handleOpen = (img) => {
-    setCurrentImage(img);
-    setOpen(true);
-  };
-
-  const handleClose = () => setOpen(false);
   return (
     <Grid container justifyContent="center">
       <Grid container alignItems="center" justifyContent="center">
@@ -23,8 +13,6 @@ export default function Comite() {
           spaceBetween={50}
           slidesPerView={1}
           breakpoints={swiperBreakpointsComite}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           {cardsComite.map((card, index) => (
             <Grid item key={card.alt} xs={12} sm={4} md={6}>
@@ -55,10 +43,13 @@ export default function Comite() {
                       mx: "auto",
                       cursor: "pointer",
                       marginBottom: "10px",
+                      transition: "transform 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                      },
                     }}
                     src={card.src}
                     alt={card.alt}
-                    onClick={() => handleOpen(card)}
                   />
                   <Box
                     sx={{
@@ -70,16 +61,10 @@ export default function Comite() {
                       paddingTop: "10px",
                     }}
                   >
-                    <Typography
-                      variant="body2"
-                      sx={{ mb: 1 }}
-                    >
+                    <Typography variant="body2" sx={{ mb: 1 }}>
                       {card.name}
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ mb: 1 }}
-                    >
+                    <Typography variant="body2" sx={{ mb: 1 }}>
                       {card.description}
                     </Typography>
                   </Box>

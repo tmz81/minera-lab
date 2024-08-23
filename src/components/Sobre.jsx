@@ -29,16 +29,16 @@ export default function Section1() {
             component="h1"
             sx={{
               fontWeight: 600,
-              fontSize: "40px",
+              fontSize: "38px",
               userSelect: "none",
               caretColor: "transparent",
-              mb: 4,
+              mb: 2,
             }}
           >
             <span style={{ color: "#FF7F0B" }}>Sobre o MineraLAB</span>
           </Typography>
           <Box>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="body1" gutterBottom>
               O Laboratório Multiusuário de Mineralogia do Solo da UFRPE
               (MineraLAB) está sediado no Departamento de Agronomia e é
               infraestrutura integrante do Programa de Pós-Graduação em Ciência
@@ -54,13 +54,14 @@ export default function Section1() {
                 userSelect: "none",
                 caretColor: "transparent",
                 mt: 4,
+                mb: 2
               }}
             >
               <span style={{ color: "#FF7F0B" }}>
                 Objetivos do Desenvolvimento Sustentável (ODS)
               </span>
             </Typography>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="body1" gutterBottom>
               Fome Zero e Agricultura Sustentável: As atividades do MineraLAB
               estão relacionadas com o manejo sustentável de solos, por meio do
               estudo da mineralogia do solo, aplicando ao uso sustentável de
