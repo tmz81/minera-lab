@@ -1,15 +1,4 @@
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-  IconButton,
-} from "@mui/material";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Container, Box, Typography, Grid } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -77,53 +66,11 @@ export default function Footer() {
                   Responsável: Valdomiro Severino de Souza Júnior
                 </Typography>
                 <Typography variant="body2">
-                  Telefone: (81) 98808-8183
+                  E-mail: mineralab.ufrpe@gmail.com
                 </Typography>
-              </Box>
-              <Typography
-                variant="body2"
-                sx={{ marginBottom: "8px", fontSize: "18px", fontWeight: 600 }}
-              >
-                Nos acompanhe
-              </Typography>
-              <Box
-                sx={{ display: "flex", justifyContent: "center", gap: "8px" }}
-              >
-                <IconButton
-                  href="https://www.youtube.com"
-                  target="_blank"
-                  sx={{ color: "#1E2125" }}
-                >
-                  <YouTubeIcon />
-                </IconButton>
-                <IconButton
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  sx={{ color: "#1E2125" }}
-                >
-                  <FacebookIcon />
-                </IconButton>
-                <IconButton
-                  href="https://www.twitter.com"
-                  target="_blank"
-                  sx={{ color: "#1E2125" }}
-                >
-                  <TwitterIcon />
-                </IconButton>
-                <IconButton
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  sx={{ color: "#1E2125" }}
-                >
-                  <InstagramIcon />
-                </IconButton>
-                <IconButton
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  sx={{ color: "#1E2125" }}
-                >
-                  <LinkedInIcon />
-                </IconButton>
+                <Typography variant="body2">
+                  Telefone: (81) 9-8808-8183
+                </Typography>
               </Box>
             </Grid>
           </Grid>
