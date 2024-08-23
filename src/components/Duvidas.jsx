@@ -7,15 +7,13 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Valdomiro from "../../assets/Valdomiro.jpeg";
-import Ygor from "../../assets/Ygor.jpeg";
 import Comite from "./Comite";
 import ComiteExterno from "./ComiteExterno";
 
 export default function Duvidas() {
   return (
     <Container
-      id="section5"
+      id="comitê"
       sx={{
         pt: "78px",
         borderTop: "1px solid #EAEDF1",

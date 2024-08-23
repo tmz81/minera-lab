@@ -10,7 +10,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo-mineralab.png";
-const pages = ["Sobre", "Serviços", "Equipamentos"];
+
+
+const pages = ["Sobre", "Serviços", "Equipamentos", "Comitê"];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -184,7 +186,7 @@ export default function NavBar() {
               },
             }}
           >
-            Contate-nos
+            Endereço
           </Button>
         </Toolbar>
       </Container>
