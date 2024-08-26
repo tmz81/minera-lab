@@ -4,7 +4,7 @@ import Sobre from "./components/Sobre";
 import Serviços from "./components/Serviços";
 import Equipamentos from "./components/Equipamentos";
 import Duvidas from "./components/Duvidas";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import { Grow, Box } from "@mui/material";
 
 function ScrollAnimation({ children }) {
