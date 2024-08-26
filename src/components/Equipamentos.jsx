@@ -1,15 +1,11 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-} from "@mui/material";
+import { Container, Box, Typography, Grid } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { cardsData, swiperBreakpoints } from "./Content";
+import { ModalEquipamentosDetalhe } from "./ModalEquipamentosDetalhe";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { ModalEquipamentosDetalhe } from "./ModalEquipamentosDetalhe";
+import { Autoplay } from "swiper/modules";
 
 export default function Equipamentos() {
   const [open, setOpen] = React.useState(false);
@@ -49,6 +45,12 @@ export default function Equipamentos() {
             breakpoints={swiperBreakpoints}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            modules={[Autoplay]}
           >
             {cardsData.map((card, index) => (
               <Grid item key={card.alt} xs={12} sm={4} md={6}>
@@ -160,26 +162,6 @@ export default function Equipamentos() {
           </Swiper>
         </Grid>
       </Grid>
-      <Box
-        sx={{
-          textAlign: "center",
-          mt: "120px",
-          color: "#fff",
-        }}
-      >
-        <Typography
-          variant="h4"
-          component="h1"
-          sx={{
-            color: "#FF7F0B",
-            fontWeight: 700,
-            fontSize: "40px",
-            paddingBottom: "78px",
-          }}
-        >
-          Perguntas mais frequentes
-        </Typography>
-      </Box>
       <ModalEquipamentosDetalhe
         open={open}
         handleClose={handleClose}
