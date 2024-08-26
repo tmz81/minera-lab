@@ -22,7 +22,7 @@ export function ModalEquipamentosDetalhe({ open, handleClose, currentImage }) {
         }}
       >
         <IconButton
-          sx={{ position: "absolute", top: 16, right: 16 }}
+          sx={{ position: "absolute", top: 0, right: 16 }}
           onClick={handleClose}
         >
           <CloseIcon />
@@ -57,7 +57,7 @@ export function ModalEquipamentosDetalhe({ open, handleClose, currentImage }) {
             sx={{
               display: "flex",
               flexDirection: "column",
-              mt: { xs: 4, md: 12 },
+              mt: { xs: 2, md: 8 },
               gap: 2,
             }}
           >
