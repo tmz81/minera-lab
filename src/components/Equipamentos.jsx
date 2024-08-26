@@ -4,8 +4,8 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { cardsData, swiperBreakpoints } from "./Content";
 import { ModalEquipamentosDetalhe } from "./ModalEquipamentosDetalhe";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export default function Equipamentos() {
   const [open, setOpen] = React.useState(false);
@@ -43,8 +43,8 @@ export default function Equipamentos() {
             spaceBetween={50}
             slidesPerView={1}
             breakpoints={swiperBreakpoints}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => {}}
+            onSwiper={() => {}}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,

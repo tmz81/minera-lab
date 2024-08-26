@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import { cardsComite, swiperBreakpointsComite } from "./Content";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function Comite() {
@@ -13,6 +14,14 @@ export default function Comite() {
           spaceBetween={50}
           slidesPerView={1}
           breakpoints={swiperBreakpointsComite}
+          onSlideChange={() => {}}
+          onSwiper={() => {}}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Autoplay]}
         >
           {cardsComite.map((card, index) => (
             <Grid item key={card.alt} xs={12} sm={4} md={6}>
