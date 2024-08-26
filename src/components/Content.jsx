@@ -1,6 +1,6 @@
 // constants.js
 import equipamento1 from "../../assets/equip5.jpeg";
-import equipamento2 from "../../assets/equipamento2.jpg";
+import equipamento2 from "../../assets/equip6.jpeg";
 import equipamento3 from "../../assets/equip4.jpeg";
 import Valdomiro from "../../assets/Valdomiro.jpeg";
 import Ygor from "../../assets/Ygor.jpeg";
@@ -47,28 +47,6 @@ export const swiperBreakpointsComite = {
 
 export const cardsData = [
   {
-    src: equipamento2,
-    alt: "Imagem 2",
-    name: "Difratômetro de Raios X",
-    description:
-      "O equipamento XRD6000 da Shimadzu é utilizado para a análise de fases minerais em diferentes materiais como solos, sedimentos, rochas, medicamentos e produtos sintéticos, por meio da técnica de Difração de Raios X (DRX).",
-    brand: "Shimadzu",
-    model: "XRD6000",
-    acquisitionYear: "2007",
-    platformCode: "UFRPE-032741",
-    status: "Ativo",
-    creationDate: "14/09/2021",
-    techniques: [
-      "Difração de Raios X por Pó (XRPD - X-ray Powder Diffraction)",
-      "Análise de Tamanho de Cristalito",
-      "Análise Qualitativa e Quantitativa de Fases",
-      "Mapeamento de Textura (Textura Cristalina)",
-      "Medidas de Parâmetros de Rede",
-      "Análise de Estrutura",
-      "Estudo de Transformações de Fase",
-    ],
-  },
-  {
     src: equipamento1,
     alt: "Imagem 1",
     name: "ATD/DSC/TG",
@@ -88,6 +66,28 @@ export const cardsData = [
       "Análise de Atmosfera Controlada",
       "Medidas de Reações Sólido-Gás",
       "Determinação de Composição",
+    ],
+  },
+  {
+    src: equipamento2,
+    alt: "Imagem 2",
+    name: "Difratômetro de Raios X",
+    description:
+      "O equipamento XRD6000 da Shimadzu é utilizado para a análise de fases minerais em diferentes materiais como solos, sedimentos, rochas, medicamentos e produtos sintéticos, por meio da técnica de Difração de Raios X (DRX).",
+    brand: "Shimadzu",
+    model: "XRD6000",
+    acquisitionYear: "2007",
+    platformCode: "UFRPE-032741",
+    status: "Ativo",
+    creationDate: "14/09/2021",
+    techniques: [
+      "Difração de Raios X por Pó (XRPD - X-ray Powder Diffraction)",
+      "Análise de Tamanho de Cristalito",
+      "Análise Qualitativa e Quantitativa de Fases",
+      "Mapeamento de Textura (Textura Cristalina)",
+      "Medidas de Parâmetros de Rede",
+      "Análise de Estrutura",
+      "Estudo de Transformações de Fase",
     ],
   },
   {

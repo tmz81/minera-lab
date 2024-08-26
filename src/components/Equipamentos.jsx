@@ -69,6 +69,12 @@ export default function Equipamentos() {
                       height: "100%",
                       minHeight: "494px",
                       flexDirection: "column",
+                      cursor: "pointer",
+                      marginBottom: "40px",
+                      transition: "transform 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                      },
                     }}
                   >
                     <Box
