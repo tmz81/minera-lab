@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, Grid } from "@mui/material";
-import { LocationOn, Email, Phone } from "@mui/icons-material";
+import { LocationOn, Email, WhatsApp } from "@mui/icons-material";
 import MiniMapLocation from "./MiniMapLocation";
 import logo from "../../assets/logo-mineralab.png"
 export default function Footer() {
@@ -62,7 +62,7 @@ export default function Footer() {
               <Typography>mineralab.ufrpe@gmail.com</Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Phone sx={{ mr: 1 }} />
+              <WhatsApp sx={{ mr: 1 }} />
               <Typography>(81) 9-8808-8183</Typography>
             </Box>
           </Grid>
