@@ -47,35 +47,47 @@ export const swiperBreakpointsComite = {
 
 export const cardsData = [
   {
-    src: equipamento1,
+    src: equipamento2,
     alt: "Imagem 2",
     name: "Difratômetro de Raios X",
     description:
-      "Análises de fases minerais (solos, sedimentos, rochas, medicamentos, produtos sintéticos) por Difração de Raios X. Tubo de Cu, Cristal de grafite.",
+      "O equipamento XRD6000 da Shimadzu é utilizado para a análise de fases minerais em diferentes materiais como solos, sedimentos, rochas, medicamentos e produtos sintéticos, por meio da técnica de Difração de Raios X (DRX).",
     brand: "Shimadzu",
     model: "XRD6000",
     acquisitionYear: "2007",
-    platformCode: "CodV49X1Q/21",
-    status: "Ativo",
-    creationDate: "14/09/2021",
-    techniques: ["Análise Mineralógica De Fase Minerais"],
-  },
-  {
-    src: equipamento2,
-    alt: "Imagem 1",
-    name: "Analisador Térmico",
-    description:
-      "Analisador térmica com sensor DSC/TG e sensor DTA/TG. Forno, temperatura de trabalho até 1.500oC. Cadinhos de amostra e referência de alumina.",
-    brand: "Netzsch",
-    model: "STA Júpiter 449F3",
-    acquisitionYear: "2012",
-    platformCode: "Cod757OGZ/21",
+    platformCode: "UFRPE-032741",
     status: "Ativo",
     creationDate: "14/09/2021",
     techniques: [
-      "Análise Térmica Diferencial",
-      "Análise térmica gravimétrica",
-      "Calorimetria Exploratória Diferencial",
+      "Difração de Raios X por Pó (XRPD - X-ray Powder Diffraction)",
+      "Análise de Tamanho de Cristalito",
+      "Análise Qualitativa e Quantitativa de Fases",
+      "Mapeamento de Textura (Textura Cristalina)",
+      "Medidas de Parâmetros de Rede",
+      "Análise de Estrutura",
+      "Estudo de Transformações de Fase",
+    ],
+  },
+  {
+    src: equipamento1,
+    alt: "Imagem 1",
+    name: "ATD/DSC/TG",
+    description:
+      "O equipamento Júpiter STA 449 da Netzsch é um analisador térmico avançado que combina diferentes técnicas de análise térmica em um único dispositivo.",
+    brand: "Netzsch",
+    model: "Júpiter STA 449",
+    acquisitionYear: "2012",
+    platformCode: "UFRPE-032750",
+    status: "Ativo",
+    creationDate: "14/09/2021",
+    techniques: [
+      "Termogravimetria (TG ou TGA - Thermogravimetric Analysis)",
+      "Calorimetria Exploratória Diferencial (DSC - Differential Scanning Calorimetry)",
+      "Análise Térmica Diferencial (DTA - Differential Thermal Analysis)",
+      "Análise Combinada TG-DSC ou TG-DTA",
+      "Análise de Atmosfera Controlada",
+      "Medidas de Reações Sólido-Gás",
+      "Determinação de Composição",
     ],
   },
   {
@@ -83,15 +95,22 @@ export const cardsData = [
     alt: "Imagem 3",
     name: "FTIR",
     description:
-      "Espectroscópico no Infravermelho por Transformada de Fourier com varredura de 400 a 4.000 cm-1. As amostras podem ser analisadas por pastilha em KBr ou por amostra sem tratamento analisada em ATR.",
+      "O equipamento PerkinElmer Spectrum TWO é um espectrofotômetro de Infravermelho por Transformada de Fourier (FTIR), utilizado para a análise qualitativa e quantitativa de materiais orgânicos e inorgânicos.",
     brand: "PerkinElmer",
     model: "Spectrum TWO",
     acquisitionYear: "2014",
-    platformCode: "Cod4OW90N/21",
+    platformCode: "UFRPE-032752",
     status: "Ativo",
     creationDate: "14/09/2021",
     techniques: [
-      "Análise De Fases Minerais Por Espectroscopia No Infravermelho Por Transformada De Fourier",
+      "Espectroscopia no Infravermelho por Transformada de Fourier (FTIR)",
+      "Análise por Pastilha em KBr",
+      "Análise por Reflexão Total Atenuada (ATR - Attenuated Total Reflectance)",
+      "Análise de Amostras Líquidas",
+      "Análise Quantitativa",
+      "Análise de Filmes Finos",
+      "Análise de Amostras Gasosas",
+      "Análise de Polímeros",
     ],
   },
 ];
@@ -103,7 +122,7 @@ export const cardsComite = [
     name: "Valdomiro Severino de Souza Júnior",
     description: "Prof. Coordenador do Laboratório",
     links: "http://lattes.cnpq.br/3461006118388502",
-    linkDescription: "Curriculo Lattes"
+    linkDescription: "Curriculo Lattes",
   },
   {
     src: Ygor,
@@ -111,7 +130,7 @@ export const cardsComite = [
     name: "Ygor Jacques",
     description: "Prof. do Depto. de Agronomia",
     links: "http://lattes.cnpq.br/0904824873761236",
-    linkDescription: "Curriculo Lattes"
+    linkDescription: "Curriculo Lattes",
   },
 ];
 
@@ -121,15 +140,17 @@ export const cardsComiteExterno = [
     alt: "José Coelho de Araújo Filho",
     name: "José Coelho de Araújo Filho",
     description: "Dr. Embrapa Solos/UEP Recife",
-    links: "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4789108J5",
-    linkDescription: "Curriculo Lattes"
+    links:
+      "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4789108J5",
+    linkDescription: "Curriculo Lattes",
   },
   {
     src: Marcelo,
     alt: "Prof. Marcelo Metri Corrêa Universidade Federal do Agreste de Pernambuco",
     name: "Marcelo Metri Corrêa",
     description: "Prof. Universidade Federal do Agreste de Pernambuco",
-    links: "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4791658P9",
-    linkDescription: "Curriculo Lattes"
+    links:
+      "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4791658P9",
+    linkDescription: "Curriculo Lattes",
   },
 ];
