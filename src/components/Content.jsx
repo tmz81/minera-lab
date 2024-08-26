@@ -1,7 +1,7 @@
 // constants.js
-import equipamento1 from "../../assets/equipamento1.jpg";
+import equipamento1 from "../../assets/equip5.jpeg";
 import equipamento2 from "../../assets/equipamento2.jpg";
-import equipamento3 from "../../assets/equipamento3.jpeg";
+import equipamento3 from "../../assets/equip4.jpeg";
 import Valdomiro from "../../assets/Valdomiro.jpeg";
 import Ygor from "../../assets/Ygor.jpeg";
 import Coelho from "../../assets/Coelho.webp";
