@@ -1,11 +1,11 @@
 // constants.js
-import equipamento1 from "../../assets/equip5.jpeg";
-import equipamento2 from "../../assets/equip6.jpeg";
-import equipamento3 from "../../assets/equip4.jpeg";
-import Valdomiro from "../../assets/Valdomiro.jpeg";
-import Ygor from "../../assets/Ygor.jpeg";
+import equipamento1 from "../../assets/equip1.webp";
+import equipamento2 from "../../assets/equip2.webp";
+import equipamento3 from "../../assets/equip3.webp";
+import Valdomiro from "../../assets/Valdomiro.webp";
+import Ygor from "../../assets/Ygor.webp";
 import Coelho from "../../assets/Coelho.webp";
-import Marcelo from "../../assets/Marcelo.png";
+import Marcelo from "../../assets/Marcelo.webp";
 
 export const swiperBreakpoints = {
   375: {

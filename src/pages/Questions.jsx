@@ -7,10 +7,14 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Comite from "./Comite";
-import ComiteExterno from "./ComiteExterno";
+import Comite from "../components/Comite";
+import {
+  cardsComite,
+  cardsComiteExterno,
+  swiperBreakpointsComite,
+} from "../components/Content";
 
-export default function Duvidas() {
+export default function QuestionSection() {
   return (
     <Container
       id="comitê"
@@ -21,6 +25,19 @@ export default function Duvidas() {
         userSelect: "none",
       }}
     >
+      <Typography
+        variant="h4"
+        component="h1"
+        sx={{
+          color: "#FF7F0B",
+          fontWeight: 700,
+          fontSize: "40px",
+          paddingBottom: "78px",
+          textAlign: "center"
+        }}
+      >
+        Perguntas mais frequentes
+      </Typography>
       <Box sx={{ margin: "0 auto", backgroundColor: "#fff", mb: 8 }}>
         <Accordion
           defaultExpanded
@@ -135,11 +152,17 @@ export default function Duvidas() {
               <ul>
                 <li>
                   O comitê gestor é formado por dois membros da UFRPE:
-                  <Comite />
+                  <Comite
+                    cardsComite={cardsComite}
+                    swiperBreakpointsComite={swiperBreakpointsComite}
+                  />
                 </li>
                 <li>
                   e dois membros externos à UFRPE:
-                  <ComiteExterno />
+                  <Comite
+                    cardsComite={cardsComiteExterno}
+                    swiperBreakpointsComite={swiperBreakpointsComite}
+                  />
                 </li>
               </ul>
             </Typography>

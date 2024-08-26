@@ -37,7 +37,7 @@ const serviceButtons = [
   },
 ];
 
-export default function Serviços() {
+export default function ServicesSection() {
   return (
     <Box
       id="serviços"

@@ -8,9 +8,9 @@ import {
   IconButton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import banner from "../../assets/logo5.jpg";
+import banner from "../../assets/about-photo.jpg";
 
-export default function Section1() {
+export default function AboutSection() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);

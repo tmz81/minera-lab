@@ -1,11 +1,12 @@
 import React from "react";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import { LocationOn, Email, WhatsApp } from "@mui/icons-material";
-import MiniMapLocation from "./MiniMapLocation";
+import MiniMapLocation from "../components/MiniMapLocation";
 import logo from "../../assets/logo-mineralab.png";
-export default function Footer() {
+
+export default function FooterSection() {
   return (
-    <Box id="footer" sx={{ bgcolor: "#ffefd5", color: "#1E2125", py: 4 }}>
+    <Box id="footer" sx={{ bgcolor: "#ffefd5", color: "#1E2125", py: 8 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -16,6 +17,7 @@ export default function Footer() {
                 sx={{
                   display: "flex",
                   mr: 2,
+                  pb: 1,
                   fontFamily: "Montserrat",
                   caretColor: "transparent",
                   fontWeight: 700,
@@ -48,26 +50,29 @@ export default function Footer() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Typography variant="h6" gutterBottom>
-              Contato
+              Contato: {""}
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, pt: 4 }}>
+              <Email sx={{ mr: 1 }} />
+              <Typography>mineralab.ufrpe@gmail.com</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+              <WhatsApp sx={{ mr: 1 }} />
+              <Typography>(81) 9-8808-8183</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
               <LocationOn sx={{ mr: 1 }} />
               <Typography>
                 Rua Dom Manuel de Medeiros, s/n, Dois Irmãos, Recife/ PE,
                 52.171-900.
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-              <Email sx={{ mr: 1 }} />
-              <Typography>mineralab.ufrpe@gmail.com</Typography>
-            </Box>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <WhatsApp sx={{ mr: 1 }} />
-              <Typography>(81) 9-8808-8183</Typography>
-            </Box>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Box>
+            <Typography variant="h6" gutterBottom>
+              Localização: {""}
+            </Typography>
+            <Box sx={{ pt: 3 }}>
               <MiniMapLocation />
             </Box>
           </Grid>
@@ -81,7 +86,7 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2">
-            MineraLab © 2024. All rights reserved.
+            MineraLAB © 2024. All rights reserved.
           </Typography>
         </Box>
       </Container>

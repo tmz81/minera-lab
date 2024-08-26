@@ -1,11 +1,10 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
-import { cardsComite, swiperBreakpointsComite } from "./Content";
+import { Box, Typography, Grid, Button } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-export default function Comite() {
+export default function Comite({ cardsComite, swiperBreakpointsComite }) {
   return (
     <Grid container justifyContent="center">
       <Grid container alignItems="center" justifyContent="center">
@@ -50,12 +49,7 @@ export default function Comite() {
                       borderRadius: "16px",
                       width: "200px",
                       mx: "auto",
-                      cursor: "pointer",
                       marginBottom: "10px",
-                      transition: "transform 0.3s ease-in-out",
-                      "&:hover": {
-                        transform: "scale(1.05)",
-                      },
                     }}
                     src={card.src}
                     alt={card.alt}
@@ -67,7 +61,7 @@ export default function Comite() {
                       fontWeight: 700,
                       borderTop: "1px solid #e0e0e0",
                       fontFamily: "Montserrat",
-                      paddingTop: "10px",
+                      paddingTop: "14px",
                     }}
                   >
                     <Typography variant="body2" sx={{ mb: 1 }}>
@@ -76,14 +70,24 @@ export default function Comite() {
                     <Typography variant="body2" sx={{ mb: 1 }}>
                       {card.description}
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      component="a"
+                    <Button
                       href={card.links}
-                      sx={{ mb: 1 }}
+                      variant="contained"
+                      sx={{
+                        mt: 2,
+                        mb: 2,
+                        width: { sm: "100%", md: "35%"},
+                        color: "black",
+                        backgroundColor: "#FFB74D",
+                        borderRadius: 50,
+                        textTransform: "none",
+                        "&:hover": {
+                          backgroundColor: "#FF7F0B",
+                        },
+                      }}
                     >
                       {card.linkDescription}
-                    </Typography>
+                    </Button>
                   </Box>
                 </Box>
               </SwiperSlide>

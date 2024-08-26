@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Sobre from "./components/Sobre";
-import Serviços from "./components/Serviços";
-import Equipamentos from "./components/Equipamentos";
-import Duvidas from "./components/Duvidas";
-import Footer from "./components/Footer";
 import { Grow, Box } from "@mui/material";
+import NavBar from "./components/NavBar";
+import AboutSection from "./pages/About";
+import ServicesSection from "./pages/Services";
+import EquipmentSection from "./pages/Equipment";
+import QuestionSection from "./pages/Questions";
+import FooterSection from "./pages/Footer";
 
 function ScrollAnimation({ children }) {
   const [visible, setVisible] = React.useState(false);
@@ -46,17 +46,17 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <Sobre />
+      <AboutSection />
       <ScrollAnimation>
-        <Serviços />
+        <ServicesSection />
       </ScrollAnimation>
-        <Equipamentos />
+        <EquipmentSection />
       <ScrollAnimation>
       </ScrollAnimation>
       <ScrollAnimation>
-        <Duvidas />
+        <QuestionSection />
       </ScrollAnimation>
-      <Footer />
+      <FooterSection />
     </>
   );
 }

@@ -78,7 +78,7 @@ export default function NavBar() {
               src={logo}
               alt="logo"
               sx={{
-                height: 80,
+                height: 74,
                 userSelect: "default",
                 cursor: "default",
                 caretColor: "transparent",
@@ -160,7 +160,7 @@ export default function NavBar() {
                   },
                 }}
               >
-                Endereço
+                Contato
               </Button>
             </Menu>
           </Box>
@@ -224,7 +224,7 @@ export default function NavBar() {
               },
             }}
           >
-            Endereço
+            Contato
           </Button>
         </Toolbar>
       </Container>

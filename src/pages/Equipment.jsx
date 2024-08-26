@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Box, Typography, Grid } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { cardsData, swiperBreakpoints } from "./Content";
-import { ModalEquipamentosDetalhe } from "./ModalEquipamentosDetalhe";
+import { cardsData, swiperBreakpoints } from "../components/Content";
+import { ModalEquipamentosDetalhe } from "../components/ModalEquipamentosDetalhe";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-export default function Equipamentos() {
+export default function EquipmentSection() {
   const [open, setOpen] = React.useState(false);
   const [currentImage, setCurrentImage] = React.useState({});
 
