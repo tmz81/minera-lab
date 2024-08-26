@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import { LocationOn, Email, Phone } from "@mui/icons-material";
-import MiniMapLocation from "./components/MiniMap";
+import MiniMapLocation from "./components/MiniMapLocation";
 import logo from "../assets/logo-mineralab.png"
 export default function Footer() {
   return (
