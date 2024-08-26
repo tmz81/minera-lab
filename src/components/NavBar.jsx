@@ -130,7 +130,7 @@ export default function NavBar() {
                         activeSection === page.toLowerCase()
                           ? "#FF7F0B"
                           : "black",
-                      display: "block",
+                      display: "flex",
                       textTransform: "none",
                       fontWeight: "bold",
                       "&:hover": {
@@ -145,8 +145,11 @@ export default function NavBar() {
               <Button
                 href="#footer"
                 variant="contained"
+                onClick={handleCloseNavMenu}
                 sx={{
-                  display: { xs: "none", md: "flex" },
+                  display: "flex",
+                  width: "90%",
+                  marginLeft: 1,
                   backgroundColor: "#FFB74D",
                   color: "black",
                   borderRadius: 50,
