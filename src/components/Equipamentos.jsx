@@ -76,6 +76,7 @@ export default function Equipamentos() {
                         transform: "scale(1.05)",
                       },
                     }}
+                    onClick={() => handleOpen(card)}
                   >
                     <Box
                       component="img"
@@ -89,14 +90,9 @@ export default function Equipamentos() {
                         mx: "auto",
                         cursor: "pointer",
                         marginBottom: "40px",
-                        transition: "transform 0.3s ease-in-out",
-                        "&:hover": {
-                          transform: "scale(1.05)",
-                        },
                       }}
                       src={card.src}
                       alt={card.alt}
-                      onClick={() => handleOpen(card)}
                     />
                     <Box
                       sx={{
@@ -159,6 +155,12 @@ export default function Equipamentos() {
                           }}
                         />{" "}
                         <strong>Tombamento</strong>: {card.platformCode}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ textAlign: "center", mt: 4, color: "gray" }}
+                      >
+                        Click para ver mais
                       </Typography>
                     </Box>
                   </Box>
