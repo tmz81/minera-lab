@@ -2,10 +2,10 @@ import React from "react";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import { LocationOn, Email, WhatsApp } from "@mui/icons-material";
 import MiniMapLocation from "./MiniMapLocation";
-import logo from "../../assets/logo-mineralab.png"
+import logo from "../../assets/logo-mineralab.png";
 export default function Footer() {
   return (
-    <Box sx={{ bgcolor: "#ffefd5", color: "#1E2125", py: 4 }}>
+    <Box id="footer" sx={{ bgcolor: "#ffefd5", color: "#1E2125", py: 4 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -40,10 +40,10 @@ export default function Footer() {
               </Box>
             </Typography>
             <Typography variant="body1" gutterBottom>
-              O (MineraLAB) pertence à Área
-              de Solos do Departamento de Agronomia da Universidade Federal
-              Rural de Pernambuco (campus Dois Irmãos, Recife), e é integrante
-              do Programa de Pós-graduação em Ciência do Solo.
+              O (MineraLAB) pertence à Área de Solos do Departamento de
+              Agronomia da Universidade Federal Rural de Pernambuco (campus Dois
+              Irmãos, Recife), e é integrante do Programa de Pós-graduação em
+              Ciência do Solo.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>

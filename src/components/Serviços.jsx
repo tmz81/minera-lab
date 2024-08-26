@@ -67,6 +67,7 @@ export default function Serviços() {
                 fontSize: 40,
                 caretColor: "transparent",
                 userSelect: "none",
+                color: "#FF7F0B",
               }}
             >
               Nossos serviços
