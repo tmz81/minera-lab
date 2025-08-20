@@ -247,7 +247,7 @@ export default function NavBar() {
             Contato
           </Button>
           <Button
-            href="https://forms.gle/seu-link-google-forms"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfs65YgpFoGjq5RLQTUQq1SidQe_3Zymiwwuq-xXlo4hq8Kzg/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
