@@ -162,6 +162,26 @@ export default function NavBar() {
               >
                 Contato
               </Button>
+              <Button
+                href="https://forms.gle/seu-link-google-forms"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "12px 24px",
+                  backgroundColor: "#FFB74D",
+                  color: "#222",
+                  fontWeight: "bold",
+                  borderRadius: "8px",
+                  textDecoration: "none",
+                  marginTop: "24px",
+                  "&:hover": {
+                    backgroundColor: "#FF7F0B",
+                  },
+                }}
+              >
+                Agendar Análise
+              </Button>
             </Menu>
           </Box>
 
@@ -225,6 +245,24 @@ export default function NavBar() {
             }}
           >
             Contato
+          </Button>
+          <Button
+            href="https://forms.gle/seu-link-google-forms"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              display: { xs: "none", md: "flex" },
+              backgroundColor: "#FFB74D",
+              color: "black",
+              borderRadius: 50,
+              fontWeight: 700,
+              textTransform: "none",
+              "&:hover": {
+                backgroundColor: "#FF7F0B",
+              },
+            }}
+          >
+            Agendar Análise
           </Button>
         </Toolbar>
       </Container>

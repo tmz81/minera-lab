@@ -23,6 +23,10 @@ export default function FooterSection() {
                   fontWeight: 700,
                   color: "inherit",
                   textDecoration: "none",
+                  transition: "transform 0.2s",
+                "&:hover": {
+                  transform: "scale(1.15)",
+                },
                 }}
               >
                 <Box
@@ -52,17 +56,69 @@ export default function FooterSection() {
             <Typography variant="h6" gutterBottom>
               Contato: {""}
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, pt: 4 }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mb: 1,
+                pt: 4,
+                transition: "transform 0.2s",
+                "&:hover": {
+                  transform: "scale(1.15)",
+                },
+                cursor: "pointer",
+              }}
+            >
               <Email sx={{ mr: 1 }} />
-              <Typography>mineralab.ufrpe@gmail.com</Typography>
+              <Typography
+                sx={{ textDecoration: "none", color: "inherit" }}
+                component="a"
+                href="mailto:mineralab.ufrpe@gmail.com"
+              >
+                mineralab.ufrpe@gmail.com
+              </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mb: 1,
+                mt: 2,
+                transition: "transform 0.2s",
+                "&:hover": {
+                  transform: "scale(1.15)",
+                },
+                cursor: "pointer",
+              }}
+            >
               <WhatsApp sx={{ mr: 1 }} />
-              <Typography>(81) 9-8808-8183</Typography>
+              <Typography
+                sx={{ textDecoration: "none", color: "inherit" }}
+                component="a"
+                href="https://wa.me/5581988088183"
+              >
+                (81) 9-8808-8183
+              </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mb: 1,
+                mt: 2,
+                transition: "transform 0.2s",
+                "&:hover": {
+                  transform: "scale(1.15)",
+                },
+                cursor: "pointer",
+              }}
+            >
               <LocationOn sx={{ mr: 1 }} />
-              <Typography>
+              <Typography
+                sx={{ textDecoration: "none", color: "inherit" }}
+                component="a"
+                href="https://www.google.com/maps/place/Portaria+Z4+da+UFRPE/@-8.0163304,-34.9477336,17z/data=!4m14!1m7!3m6!1s0x7ab198b8755d1a9:0xf6b71cf1535869e8!2sPortaria+Z4+da+UFRPE!8m2!3d-8.0163304!4d-34.9451587!16s%2Fg%2F11dfj95tf7!3m5!1s0x7ab198b8755d1a9:0xf6b71cf1535869e8!8m2!3d-8.0163304!4d-34.9451587!16s%2Fg%2F11dfj95tf7?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+              >
                 Rua Dom Manuel de Medeiros, s/n, Dois Irmãos, Recife/ PE,
                 52.171-900.
               </Typography>

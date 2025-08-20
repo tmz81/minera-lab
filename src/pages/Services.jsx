@@ -111,6 +111,26 @@ export default function ServicesSection() {
                         />
                       ))}
                     </Box>
+                    <a
+                      href="https://forms.gle/seu-link-google-forms"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-block",
+                        padding: "12px 24px",
+                        backgroundColor: "#FFB74D",
+                        color: "#222",
+                        fontWeight: "bold",
+                        borderRadius: "8px",
+                        textDecoration: "none",
+                        marginTop: "24px",
+                        "&:hover": {
+                          backgroundColor: "#FF7F0B",
+                        },
+                      }}
+                    >
+                      Agendar Análise
+                    </a>
                   </Typography>
                 </Box>
               </Grid>

@@ -76,12 +76,14 @@ export default function Comite({ cardsComite, swiperBreakpointsComite }) {
                       sx={{
                         mt: 2,
                         mb: 2,
-                        width: { sm: "100%", md: "35%"},
+                        width: { sm: "100%", md: "35%" },
                         color: "black",
                         backgroundColor: "#FFB74D",
                         borderRadius: 50,
                         textTransform: "none",
+                        transition: "transform 0.2s",
                         "&:hover": {
+                          transform: "scale(1.15)",
                           backgroundColor: "#FF7F0B",
                         },
                       }}
