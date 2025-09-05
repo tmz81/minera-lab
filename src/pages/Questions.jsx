@@ -144,21 +144,27 @@ export default function QuestionSection() {
             <Typography
               sx={{ color: "#FF7F0B", fontWeight: 700, fontSize: 28 }}
             >
-              O comitê gestor é formado por quais membros?
+              O comitê é formado por quais membros?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
               <ul>
-                <li>
-                  O comitê gestor é formado por dois membros da UFRPE:
+                <li style={{ fontWeight: 700 }}>
+                  COMITÊ GESTOR:
+                  <br />
+                  <br />
                   <Comite
                     cardsComite={cardsComite}
                     swiperBreakpointsComite={swiperBreakpointsComite}
                   />
+                  <br />
+                  <br />
                 </li>
-                <li>
-                  e dois membros externos à UFRPE:
+                <li style={{ fontWeight: 700 }}>
+                  MEMBROS EXERTNOS:
+                  <br />
+                  <br />
                   <Comite
                     cardsComite={cardsComiteExterno}
                     swiperBreakpointsComite={swiperBreakpointsComite}

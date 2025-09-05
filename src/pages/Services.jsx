@@ -112,7 +112,7 @@ export default function ServicesSection() {
                       ))}
                     </Box>
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfs65YgpFoGjq5RLQTUQq1SidQe_3Zymiwwuq-xXlo4hq8Kzg/viewform?usp=header"
+                      href="https://forms.gle/seu-link-google-forms"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

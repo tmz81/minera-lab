@@ -6,6 +6,7 @@ import Valdomiro from "../../assets/Valdomiro.webp";
 import Ygor from "../../assets/Ygor.webp";
 import Coelho from "../../assets/Coelho.webp";
 import Marcelo from "../../assets/Marcelo.webp";
+import Valderez from "../../assets/Valderez.webp";
 
 export const swiperBreakpoints = {
   375: {
@@ -151,6 +152,15 @@ export const cardsComiteExterno = [
     description: "Prof. Universidade Federal do Agreste de Pernambuco",
     links:
       "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4791658P9",
+    linkDescription: "Curriculo Lattes",
+  },
+  {
+    src: Valderez,
+    alt: "Profa. Dra. Valderez Pinto Ferreira",
+    name: "Valderez Pinto Ferreira",
+    description: "Prof. Dra. Universidade Federal de Pernambuco",
+    links:
+      "http://lattes.cnpq.br/9663699374798550",
     linkDescription: "Curriculo Lattes",
   },
 ];
